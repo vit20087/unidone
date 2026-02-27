@@ -26,4 +26,4 @@
 
 1. Зклонуйте репозиторій на свій комп'ютер:
    ```bash
-   git clone [https://github.com/vit20087/unidone.git](https://github.com/vit20087/unidone.git)
+   git clone [https://github.com/vit20087/unidone.git]
