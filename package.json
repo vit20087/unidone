@@ -1,0 +1,31 @@
+{
+  "name": "unidone",
+  "version": "1.0.0",
+  "description": "**Менеджер студентських завдань (MVP)**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vit20087/unidone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vit20087/unidone/issues"
+  },
+  "homepage": "https://github.com/vit20087/unidone#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@vitest/coverage-v8": "^4.0.18",
+    "vitest": "^4.0.18"
+  },
+  "scripts": {
+    "test:unit": "vitest",
+    "test:unit:coverage": "vitest --coverage",
+    "test:e2e": "playwright test"
+  }
+}
