@@ -1,0 +1,38 @@
+name: CI/CD Pipeline
+
+# Тригери: запускати при пуші або створенні Pull Request
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Отримуємо код з репозиторію
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Встановлюємо середовище Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Встановлюємо залежності
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Перевіряємо якість коду (Linting)
+      - name: Run linter
+        run: npm run lint
+
+      # 5. Запускаємо Unit-тести
+      - name: Run unit tests
+        run: npm run test:unit
