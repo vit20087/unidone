@@ -35,4 +35,4 @@ jobs:
 
       # 5. Запускаємо Unit-тести
       - name: Run unit tests
-        run: npm run test:unit
+        run: npx vitest run --exclude tests/e2e.spec.js
