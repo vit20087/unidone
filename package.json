@@ -9,8 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src/**",
-    "test:unit": "vitest",
-    "test:unit:coverage": "vitest --coverage",
+    "test:unit": "vitest run --exclude tests/e2e.spec.js",
+    "test:unit:coverage": "vitest run --coverage --exclude tests/e2e.spec.js",
     "test:e2e": "playwright test"
   },
   "repository": {
