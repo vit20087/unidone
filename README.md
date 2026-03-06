@@ -1,11 +1,11 @@
+[![CI/CD Pipeline](https://github.com/vit20087/unidone/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/vit20087/unidone/actions/workflows/ci-cd.yml)
+**Live демо проєкту:**[https://unidone-seven.vercel.app/]
 # UniDone - Найкращий менеджер завдань для студентів 
 
 **Менеджер студентських завдань (MVP)**
 
 Проєкт створюється в рамках циклу лабораторних робіт з дисципліни "Управління IT проєктами" для демонстрації повного життєвого циклу розробки ПЗ (SDLC).
 
-[![CI/CD Pipeline](https://github.com/vit20087/unidone/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/vit20087/unidone/actions/workflows/ci-cd.yml)
-**Live демо проєкту:**[https://unidone-seven.vercel.app/]
 
 ## Поточний етап
 **Лабораторна робота №3:** Автоматизація збірки проєкту та управління артефактами.
