@@ -1,5 +1,9 @@
 import {getDaysUntilDeadLine} from "./tasks.js";
-
+import * as Sentry from "@sentry/browser";
+Sentry.init({
+    dsn:"https://c9db002493f070792b4874f07e95e735@o4510993997889536.ingest.de.sentry.io/4510997027553360",
+    tracesSampleRate: 1.0,
+});
 const appTitle = import.meta.env.VITE_APP_TITLE || 'UniDone - Менеджер';
 document.querySelector('h1').innerText = appTitle;
 
@@ -22,3 +26,15 @@ testButton.addEventListener('click', () => {
     });
     alert('Подію task_created відправлено в PostHog!');
 });
+
+const errorButton = document.createElement('button');
+errorButton.innerText = "🚨 Згенерувати помилку (Sentry)";
+errorButton.style.padding = "10px";
+errorButton.style.marginTop = "20px";
+errorButton.style.backgroundColor = "#ff4c4c";
+errorButton.style.color = "white";
+document.body.appendChild(errorButton);
+
+setTimeout(() => {
+    throw new Error("Критична помилка! Зламався модуль завдань (Лаба 6)");
+}, 2000);

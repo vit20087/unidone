@@ -32,6 +32,7 @@
     "vitest": "^4.0.18"
   },
   "dependencies": {
+    "@sentry/browser": "^10.42.0",
     "posthog-js": "^1.359.0"
   }
 }
